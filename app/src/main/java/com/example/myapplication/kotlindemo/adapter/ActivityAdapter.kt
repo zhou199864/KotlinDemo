@@ -28,7 +28,4 @@ class ActivityAdapter(private val activityList: Map<Int,String>, private val cal
         val button: Button = view.findViewById(R.id.btn)
     }
 
-    interface Call{
-        fun call(pos: Int)
-    }
 }

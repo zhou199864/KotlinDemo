@@ -1,7 +1,11 @@
 package com.example.myapplication.kotlindemo
 
 import android.app.Activity
-
+/**
+* @Author Zyique Zhou
+* @Date 6/30/2020
+* @Description control all activity eg:finish add etc.
+*/
 object ActivityCollector {
     private val activityList = ArrayList<Activity>()
 

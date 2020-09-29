@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.BroadcastActivity">
+        android:orientation="vertical">
 
-    <Button
-            android:id="@+id/btn_broadcast"
-            android:text="Sent Broadcast"
-            android:textAllCaps="false"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
+    <EditText
+            android:id="@+id/ed_user_name"
+            android:hint="Please Enter UserName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-</RelativeLayout>
+    <EditText
+            android:id="@+id/ed_password"
+            android:hint="Please Enter Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/btn_enter"
+            android:text="LOGIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
