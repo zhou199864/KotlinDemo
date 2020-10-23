@@ -16,6 +16,7 @@ class JetPackActivity : BaseActivity() {
     val bookDao = AppDataBase.getDatabase().bookDao()
     val book1 = Book("Java","LXH",789,78.9)
     val book2 = Book("Android","GL",689,88.9)
+    val lists = listOf<Book>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,8 +44,8 @@ class JetPackActivity : BaseActivity() {
         }
         btn_room_select.setOnClickListener {
             thread {
-                val list = bookDao.loadAllBook()
-                for (book in list){
+                val lists = bookDao.loadAllBook()
+                for (book in lists){
                     println(book)
                 }
             }
